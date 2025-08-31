@@ -4,15 +4,68 @@
 }
 
 .main-title {
-    font-size: 60px;
-    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
     color: #181a7a;
     margin-bottom: 20px;
 }
 
 .colors {
-  background: linear-gradient(to right, #ffe600, #ff9900, #ff0000, #9900ff, #00e1ff, #00ff62);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  color: transparent;
+    font-family: "Rubik Glitch", sans-serif;
+    font-weight: 100;
+    font-size: 70px;
+    background: linear-gradient(to right, #ffe600, #ff9900, #ff0000, #9900ff, #00e1ff, #00ff62);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.sub-title {
+    font-family: "Geo", cursive;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.info {
+    font-family: "Geo", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #555;
+}
+
+.account {
+    text-decoration: none;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1.2s forwards;
+}
+
+.first {
+  animation-delay: 0s;
+}
+
+.second {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-20px);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
 }
