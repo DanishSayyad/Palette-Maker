@@ -104,7 +104,8 @@ li {
 }
 
 .smol {
-  color: red
+  color: red;
+  font-family: sans-serif;
 }
 
 @media (max-width: 600px) {
