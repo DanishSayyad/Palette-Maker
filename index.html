@@ -8,13 +8,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Rubik+Glitch&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animation.css">
+        <link rel="stylesheet" href="buttons.css">
     </head>
     <body>
         <div class="hero fade-in-up first">
             <h1 class="main-title">Visualize Your <span class="colors">Colors</span>!</h1>
             <h2 class="sub-title">Palette Maker by <a href="https://github.com/DanishSayyad" class="account" target="_blank">Danish Sayyad</a></h2>
-            <p class="info fade-in-up second">To use the visualizer, first enter the number in the input below. Then fill in the codes in the boxes beside the color strips. Simple right!</p>
+            <p class="info fade-in-up second">To use the visualizer, click on the <span class="smol">+</span> button and fill the color code. Click <span class="smol">-</span> to remove it from the comparision. Simple right!</p>
+        </div>
+        
+        <div class="fade-in-up third user-input">
+            <button id="generate-btn">+</button>
+            <button id="rem-btn">-</button>
         </div>
 
+        <div id="color-strips">
+            <!-- Color strips will be generated here -->
+             <ul id="palette"></ul>
+             <ul class="color-options"></ul>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 </html>

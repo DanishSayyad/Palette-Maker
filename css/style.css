@@ -1,0 +1,143 @@
+.hero {
+    padding: 50px;
+    text-align: center;
+}
+
+.main-title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: #181a7a;
+    margin-bottom: 20px;
+}
+
+.colors {
+    font-family: "Rubik Glitch", sans-serif;
+    font-weight: 100;
+    font-size: 70px;
+    background: linear-gradient(to right, #ffe600, #ff9900, #ff0000, #9900ff, #00e1ff, #00ff62);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.sub-title {
+    font-family: "Geo", cursive;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.info {
+    font-family: "Geo", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #555;
+}
+
+.account {
+    text-decoration: none;
+}
+
+.user-input {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#color-strips {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.color-box {
+  width: 260px;
+  height: auto;
+  margin: 0 10px;
+  border: 4px solid black;
+  border-radius: 18px;
+  z-index: 3;
+}
+
+.color-options {
+  width: 200px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.strip {
+  height: 60px;
+  width: 260px;
+}
+
+.round-above {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.round-below {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.smol {
+  color: red
+}
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 50px;
+  }
+
+  .hero {
+    padding-bottom: 20px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  .colors {
+    font-size: 50px;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+
+  .color-box {
+    width: 130px;
+  }
+
+  .strip {
+    width: 130px;
+  }
+
+  .color-count {
+    width: 130px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .done-btn {
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .user-input {
+    margin-top: 10px;
+  }
+}
